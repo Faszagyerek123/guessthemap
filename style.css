@@ -1,0 +1,111 @@
+/* CSS - style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+/* Újraindítás gomb stílusa */
+#endGameMenu button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#endGameMenu button:hover {
+    background-color: #45a049;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #333; /* Sötét szürke háttér */
+    color: white; /* Fehér szöveg */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.question-panel {
+    padding: 20px; /* Panel tartalmának belső margója */
+    position: relative;
+}
+
+.question-panel::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px); /* Panel szélesség + keret vastagsága (3px a bal és jobb oldalon) */
+    height: calc(100% + 6px); /* Panel magasság + keret vastagsága (3px az alján és a tetején) */
+    border: 3px solid transparent; /* Alapértelmezett, átlátszó keret */
+    border-radius: 10px;
+    animation: animateBorder 5s linear infinite; /* Animáció hozzáadása */
+    top: -3px; /* A keret felfelé mozog, hogy a panel alatt legyen */
+    left: -3px; /* A keret balra mozog, hogy a panel baloldalán legyen */
+}
+
+@keyframes animateBorder {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: blue;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+/* Panel stílusa a pontszámhoz */
+.score-container {
+    background-color: #0056b3; /* Háttérszín */
+    color: white; /* Szövegszín */
+    padding: 10px 20px; /* Távolság a szövegtől a panelen belül */
+    border-radius: 5px;
+    margin-top: 10px; /* Távolság a pontszámtól */
+}

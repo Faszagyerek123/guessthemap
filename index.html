@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSGO Guess The Map- By Ihasz</title>
+</head>
+<div class="container">
+    <div class="question-panel">
+<body>
+    <audio id="correctAudio" src="correct.mp3"></audio>
+    <audio id="incorrectAudio" src="incorrect.mp3"></audio>
+    <div class="container">
+        <img src="kép1.jpg" id="kép" alt="Kép">
+        <div id="szöveg">Válaszd ki a helyes választ:</div>
+        <div class="options">
+            <button onclick="checkAnswer(0)">Vertigo</button>
+            <button onclick="checkAnswer(1)">Mirage</button>
+            <button onclick="checkAnswer(2)">Inferno</button>
+            <button onclick="checkAnswer(3)">Dust2</button>
+        </div>
+        <div id="endGameMenu" style="display: none;">
+            <button onclick="restartGame()">Újraindítás</button>
+        </div>
+    <div class="score-container">
+        <div id="score" class="score">Pontszám: 0</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
